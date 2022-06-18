@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #0a0843;
+  --secondary-color: #f27b0c;
+  --tertiary-color: #ffffff;
+  --grey-bg: #d9d9d9;
+}
+
+.footer {
+  height: 350px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer .footer-about {
+  width: 50%;
+  left: 0;
+}
+
+.footer-about p {
+  padding-right: 150px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer .footer-nav {
+  width: 25%;
+}
+
+.footer-nav ul li {
+  color: #fff;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.footer .footer-support {
+  width: 25%;
+}
+
+.footer-support p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-support .fa-phone,
+.fa-envelope {
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+
+.footer-support .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.footer-social .fa-twitter,
+.fa-facebook,
+.fa-instagram {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 30px;
+  transition: ease-in 0.3s;
+}
+
+.footer-social .fa-twitter:hover,
+.fa-facebook:hover,
+.fa-instagram:hover {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+.footer h3 {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* Footer Copyright */
+
+.footer-credit {
+  background-color: var(--grey-bg);
+  font-weight: 600;
+  height: 50px;
+  width: 100%;
+  padding: 0 13.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.footer-credit p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.footer-credit img {
+  width: auto;
+  height: 25px;
+}

@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #0a0843;
+  --secondary-color: #f27b0c;
+  --tertiary-color: #ffffff;
+}
+
+/* HEADER CONTAINER */
+
+.header {
+  height: 8.125rem;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.header-first {
+  height: 30%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list .header-menuIcon .fa-bars {
+  color: #fff;
+  font-size: 20px;
+}
+
+ul.header-list li,
+.header-list {
+  color: #fff;
+  list-style: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0 20px;
+}
+
+.header-shop-Btn {
+  right: 0;
+  background-color: var(--secondary-color);
+  padding: 6px;
+  color: #fff;
+}
+
+.header-second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 35%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin: 0 auto;
+  background-color: var(--tertiary-color);
+}
+
+/* STYLING FOR CONTACT AND SIGN UP LINKS */
+.header-second .header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+}
+
+.header-nav .fa-envelope,
+.fa-phone,
+.fa-right-to-bracket {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.header-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.header-third {
+  height: 35%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-third .search-bar {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar form {
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  padding-top: 2px;
+}
+.search-bar input {
+  width: 70%;
+  height: 90%;
+  border: none;
+  padding: 0 20px;
+}
+
+.search-bar select {
+  height: 90%;
+}
+
+.search-bar button {
+  width: 15%;
+  height: 90%;
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
