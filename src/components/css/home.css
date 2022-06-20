@@ -7,6 +7,7 @@
 
 .home {
   max-width: 100%;
+  background-color: var(--grey-bg);
 }
 
 .hero-section {
@@ -52,7 +53,7 @@
 }
 
 .below-hero_content h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 2.5rem);
   color: #000;
   font-weight: 800;
   padding: 0 20%;
@@ -62,5 +63,118 @@
 .popular-cat {
   min-height: 18.75rem;
   max-width: 80%;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem;
   background-color: var(--grey-bg);
+}
+
+.popular-vendors .vendors-heading_readMore,
+.popular-cat .cat-heading_readMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-vendors .vendors-heading_readMore a,
+.popular-cat .cat-heading_readMore a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom: 2px solid;
+  border-bottom-width: 0.2rem;
+  border-bottom-color: var(--secondary-color);
+}
+
+.vendors-heading_readMore h3,
+.cat-heading_readMore h3 {
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.vendor-container,
+.cat-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1.25rem 0;
+}
+
+.vendor-container > .vendor-box,
+.cat-container > .cat-box {
+  flex: 0 1 15%;
+}
+
+.vendor-box,
+.cat-box {
+  /* box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3); */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.vendor-box img,
+.cat-box img {
+  height: 230px !important;
+  width: 200px;
+}
+
+.shop-info {
+  background-color: #fff;
+  min-height: 18.75rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #111;
+  padding-right: 1rem;
+}
+
+.info-box:last-child {
+  border-right: none;
+}
+
+.info-box > .fa-truck,
+.fa-percent,
+.fa-sack-dollar,
+.fa-headset {
+  padding: 1.25rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--secondary-color);
+}
+
+.info-box p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
 }
