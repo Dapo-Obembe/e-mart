@@ -1,20 +1,36 @@
 import React from "react";
 import "./css/header.css";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function Header() {
   return (
     <div className="header">
       <div className="header-first">
-        <ul className="header-list">
+        <div className="header-items">
           <div className="header-menuIcon">
-            <i class="fa-solid fa-bars"></i>
+            <Dropdown className="d-inline mx-2">
+              <Dropdown.Toggle
+                id="dropdown-autoclose-true"
+                className="menu-toggle"
+              >
+                MENU
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
-          <li>Home</li>
-          <li>Fashion</li>
-          <li>Medical Equip</li>
-          <li>Farm Product</li>
-          <li>Electronics</li>
-        </ul>
+          <ul className="header-Deskmenu">
+            <li>Home</li>
+            <li>Fashion</li>
+            <li>Medical Equip</li>
+            <li>Farm Product</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
         <div className="header-shop-Btn">
           <i class="fa-solid fa-cart-arrow-down"></i> Shop Now
         </div>

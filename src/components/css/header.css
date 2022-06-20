@@ -8,7 +8,7 @@
 
 .header {
   height: 8.125rem;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--primary-color);
 }
 
@@ -22,14 +22,37 @@
   justify-content: space-between;
   align-items: center;
 }
+/* .header-menuIcon {
+  background-color: var(--primary-color);
+  width: 12.5rem;
+  z-index: 999;
+  height: 100vh;
+  left: 0;
+} */
 
-.header-list .header-menuIcon .fa-bars {
-  color: #fff;
-  font-size: 20px;
+.header-menuIcon .menu-toggle {
+  background-color: inherit;
 }
 
-ul.header-list li,
-.header-list {
+.header-menuIcon .menu-toggle:focus {
+  background-color: var(--secondary-color);
+}
+
+.header-items .header-menuIcon .fa-bars {
+  color: #fff;
+  font-size: clamp(1rem, 1.25rem);
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 1.25rem 0 1.25rem;
+}
+
+ul.header-Deskmenu li,
+.header-Deskmenu {
   color: #fff;
   list-style: none;
   font-weight: 500;
@@ -38,13 +61,21 @@ ul.header-list li,
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0px 20px 0 20px;
+  margin: 0px 1.25rem 0 1.25rem;
+}
+
+/* HIDE HEADER DESKMENU ON MOBILE */
+@media screen and (max-width: 900px) {
+  ul.header-Deskmenu li,
+  .header-Deskmenu {
+    display: none;
+  }
 }
 
 .header-shop-Btn {
   right: 0;
   background-color: var(--secondary-color);
-  padding: 6px;
+  padding: 0.375rem;
   color: #fff;
 }
 
@@ -55,12 +86,18 @@ ul.header-list li,
   align-items: center;
   height: 35%;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 1rem;
   padding-bottom: 10px;
   padding-left: 12%;
   padding-right: 12%;
   margin: 0 auto;
   background-color: var(--tertiary-color);
+}
+
+.header-second .header-logo img {
+  width: auto;
+  height: 2.5em;
+  z-index: 100;
 }
 
 /* STYLING FOR CONTACT AND SIGN UP LINKS */
@@ -77,15 +114,23 @@ ul.header-list li,
 .fa-right-to-bracket {
   color: var(--secondary-color);
   font-weight: 700;
+  font-size: 1rem;
 }
 .header-nav a {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin: 0 10px;
+  margin: 0 0.625rem;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 600;
+}
+
+/* HIDE EMAIL AND CONTACT ON MOBILE */
+@media screen and (max-width: 900px) {
+  .email-link,
+  .contact-link {
+    display: none;
+  }
 }
 
 .header-third {
@@ -111,13 +156,13 @@ ul.header-list li,
   background-color: var(--primary-color);
   height: 100%;
   width: 100%;
-  padding-top: 2px;
+  padding-top: 0.2rem;
 }
 .search-bar input {
   width: 70%;
   height: 90%;
   border: none;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .search-bar select {
@@ -129,7 +174,9 @@ ul.header-list li,
   height: 90%;
   background: var(--secondary-color);
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   border: none;
 }
+
+/* Responsive STYLING */
