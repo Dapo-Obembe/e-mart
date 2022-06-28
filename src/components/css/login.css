@@ -1,0 +1,119 @@
+.login-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.login-hero {
+  min-height: 18.75rem;
+  width: 100%;
+  padding: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-hero h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.login-form_container {
+  width: 50%;
+  margin: 5rem auto;
+  padding: 1.25rem;
+  min-height: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-bg);
+  border-radius: 0.5rem;
+  border-top: 4px solid;
+  border-top-color: orange;
+  animation: borderSpin infinite 1s;
+}
+
+@keyframes borderSpin {
+  0% {
+    transform: rotate(0de);
+  }
+  100% {
+    transform: rotate(360de);
+  }
+}
+.login-heading {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* STYLE SOCIAL LOGINS */
+
+.login-form_container .social-login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.social-login .google-login,
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.google-login p,
+.facebook-login p {
+  font-weight: 700;
+  font-size: clamp(0.5rem, 1rem);
+}
+
+.login-form_container .login-form form,
+form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form form label {
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.login-form .login-rem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.5rem;
+}
+
+.signUp-Btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  transition: all ease-in 0.5s;
+}
+
+.signUp-Btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}

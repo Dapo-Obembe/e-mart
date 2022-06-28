@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 import "./css/home.css";
 
 function Home() {
@@ -22,22 +23,11 @@ function Home() {
                   Itaqueus eum distin actio commodi sit amet deserunt sitdo.
                 </p>
                 <div className="heroBtns">
-                  <button className="getStarted_Btn">Get Started</button>
+                  <button className="getStarted_Btn">
+                    <Link to="/login">Get Started</Link>
+                  </button>
                   <button className="regBtn">Register as Vendor</button>
                 </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/hero-bg2.png"
-                height="500"
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -48,12 +38,13 @@ function Home() {
                 alt="Third slide"
               />
 
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+              <Carousel.Caption className="captions-2">
+                <h2>Where Buyers and Sellers Meet!</h2>
+                <p>We connect sellers and buyers across the state.</p>
+                <div className="heroBtns">
+                  <button className="getStarted_Btn">Get Started</button>
+                  <button className="regBtn">Register as Vendor</button>
+                </div>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -174,6 +165,118 @@ function Home() {
             <div className="info-box">
               <i class="fa-solid fa-headset"></i>
               <p>Online Support</p>
+            </div>
+          </div>
+        </div>
+        <div className="trending-products">
+          <div className="trending-heading_readMore">
+            <h3>Trending Products</h3>
+            <a href="/">See All</a>
+          </div>
+          <div className="trending-container">
+            <div className="product-box">
+              <img
+                src="/images/handbag.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Women's Handbag</p>
+              <p>$100</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/laptop.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Laptop</p>
+              <p>$1000</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/phone.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Android Phone</p>
+              <p>$400</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/shoe.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Ladies' Shoe</p>
+              <p>$100</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/Steth.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Stethoscope</p>
+              <p>$100</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/wristwatch.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Wristwatch for Men</p>
+              <p>$300</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/vendors.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Product Title</p>
+              <p>$100</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
+            </div>
+            <div className="product-box">
+              <img
+                src="/images/vendors.png"
+                alt="vendors"
+                width="235"
+                height="290"
+              />
+              <p>Product Title</p>
+              <p>$100</p>
+              <button className="buyBtn">
+                BUY NOW <i class="fa-solid fa-cart-arrow-down"></i>
+              </button>
             </div>
           </div>
         </div>

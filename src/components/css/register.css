@@ -1,0 +1,21 @@
+.register-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.register-hero {
+  min-height: 18.75rem;
+  width: 100%;
+  padding: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.register-hero h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 45px;
+}
