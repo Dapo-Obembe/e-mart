@@ -78,7 +78,16 @@ function Login() {
                 value="LOGIN"
               />
               <button type="button" className="signUp-Btn">
-                REGISTER HERE NOW
+                <Link
+                  to="/register"
+                  style={{
+                    color: "#fff",
+                    fontWeight: "600",
+                    textDecoration: "none",
+                  }}
+                >
+                  REGISTER HERE NOW
+                </Link>
               </button>
             </form>
           </div>
