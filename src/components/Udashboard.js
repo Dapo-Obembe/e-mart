@@ -3,10 +3,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
+import "./css/udashboard.css";
 
 function Udashboard() {
   const dashHero = {
-    minHeight: "300px",
+    minHeight: "200px",
     display: "grid",
     placeItems: "center",
   };
@@ -57,7 +58,7 @@ function Udashboard() {
         <Container
           className="dash-container"
           style={{
-            width: "80%",
+            width: "60%",
             margin: "0 auto",
           }}
         >
@@ -100,9 +101,34 @@ function Udashboard() {
               <div className="user-details">
                 <div className="account-details">
                   <h4>Account Details</h4>
+                  <p>Raymond Adeleke</p>
+                  <p>+2348151244131</p>
+                  <p>adeleke@e-mart.com</p>
+                  <Link to="">Change password</Link>
                 </div>
                 <div className="address-book">
                   <h4>Account Details</h4>
+                  <p style={{ fontWeight: "700" }}>Your default address:</p>
+                  <p>Oluwatobiloba Adebayo</p>
+                  <p>
+                    St. Paul's Anglican Church, Idagba Street, Efon Alaaye Ekiti
+                    State
+                  </p>
+                  <p>+234 8166715024 / +234 7014673387</p>
+                </div>
+              </div>
+              <div className="user-boxes">
+                <div className="box">
+                  <p>Wishlist</p>
+                  <p>5</p>
+                </div>
+                <div className="box">
+                  <p>Purchased</p>
+                  <p>5</p>
+                </div>
+                <div className="box">
+                  <p>Pending</p>
+                  <p>5</p>
                 </div>
               </div>
             </Col>
